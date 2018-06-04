@@ -1,4 +1,4 @@
-# Scss plugin for Craft CMS 3.x
+# SCSS plugin for Craft CMS 3.x
 
 Compile SCSS to CSS in your templates
 
@@ -18,19 +18,19 @@ To install the plugin, follow these instructions.
 
         composer require chasegiunta/scss
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Scss.
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for SCSS.
 
-## Scss Overview
+## SCSS Overview
 
 Craft conveniently offers `{% css %}` tags to include template-specific styles in the `head` of your page. This plugin takes that functionality a bit further by enabling support for compiling SCSS to CSS with `{% scss %}` using the scssphp library (https://github.com/leafo/scssphp).
 
-## Configuring Scss
+## Configuring SCSS
 
 By default, while working with devMode enabled, the styles generated will be output into a readable "Expanded" format. If Craft is not running in devMode, the styles will be uglified into a "Crunched" format.
 
 You can configure these default output formats by copying the `scss.php` file from the plugin directory in your `config` folder.
 
-## Using Scss
+## Using SCSS
 
 ```
 {% scss %}
