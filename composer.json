@@ -31,7 +31,7 @@
         }
     },
     "extra": {
-        "name": "Scss",
+        "name": "SCSS",
         "handle": "scss",
         "hasCpSettings": false,
         "hasCpSection": false,
