@@ -1,6 +1,6 @@
 <?php
 /**
- * Scss plugin for Craft CMS 3.x
+ * SCSS plugin for Craft CMS 3.x
  *
  * Compiler for SCSS
  *
@@ -9,9 +9,9 @@
  */
 
 /**
- * Scss config.php
+ * SCSS config.php
  *
- * This file exists only as a template for the Scss settings.
+ * This file exists only as a template for the SCSS settings.
  * It does nothing on its own.
  *
  * Don't edit this file, instead copy it to 'craft/config' as 'scss.php'
