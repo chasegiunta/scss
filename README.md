@@ -63,6 +63,8 @@ Given the following SCSS:
 {% endscss %}
 ```
 
+### Output format
+
 Specifying an output format will take precedence over any default settings in `config/scss.php`.
 
 `{% scss expanded %}`
@@ -121,6 +123,8 @@ Specifying an output format will take precedence over any default settings in `c
 You can output the original SCSS line numbers within the compiled styles for better frontend debugging by appending debug `{% scss debug %}`
 Note: this only works with the Expanded, Nested, and Compact output formats.
 
+### @import
 
+When you import a file using the `@import` directive, the current path of your Craft install is used as the search path.
 
 Brought to you by [Chase Giunta](https://chasegiunta.com)
