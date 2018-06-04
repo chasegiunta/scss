@@ -2,6 +2,8 @@
 
 Compile SCSS to CSS in your templates
 
+![Screenshot](src/icon.svg)
+
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0 or later.
