@@ -24,7 +24,7 @@
   "require": {
     "craftcms/cms": "^4.0.0-alpha",
     "scssphp/scssphp": "^1.10",
-    "php": "^8.0.0"
+    "php": "^8.0.2"
   },
   "autoload": {
     "psr-4": {
