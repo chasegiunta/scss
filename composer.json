@@ -1,50 +1,56 @@
 {
-    "name": "chasegiunta/scss",
-    "description": "Compiler for SCSS",
-    "type": "craft-plugin",
-    "version": "1.0.0",
-    "keywords": [
-        "craft",
-        "cms",
-        "craftcms",
-        "craft-plugin",
-        "scss"
-    ],
-    "support": {
-        "docs": "https://github.com/chasegiunta/scss/blob/master/README.md",
-        "issues": "https://github.com/chasegiunta/scss/issues"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Chase Giunta",
-            "homepage": "https://chasegiunta.com"
-        }
-    ],
-    "require": {
-        "craftcms/cms": "^3.0.0",
-        "scssphp/scssphp": "^1.10"
-    },
-    "autoload": {
-        "psr-4": {
-          "chasegiunta\\scss\\": "src/"
-        }
-    },
-    "extra": {
-        "name": "SCSS",
-        "handle": "scss",
-        "hasCpSettings": false,
-        "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/chasegiunta/scss/master/CHANGELOG.md",
-        "components": {
-            "scssService": "chasegiunta\\scss\\services\\ScssService"
-        },
-        "class": "chasegiunta\\scss\\Scss"
-    },
-    "config": {
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "craftcms/plugin-installer": true
-        }
+  "name": "chasegiunta/scss",
+  "description": "Compiler for SCSS",
+  "type": "craft-plugin",
+  "version": "2.0.0",
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "craft-plugin",
+    "scss"
+  ],
+  "support": {
+    "docs": "https://github.com/chasegiunta/scss/blob/master/README.md",
+    "issues": "https://github.com/chasegiunta/scss/issues"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chase Giunta",
+      "homepage": "https://chasegiunta.com"
     }
+  ],
+  "require": {
+    "craftcms/cms": "^4.0.0-alpha",
+    "scssphp/scssphp": "^1.10",
+    "php": "^8.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "chasegiunta\\scss\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "SCSS",
+    "handle": "scss",
+    "hasCpSettings": false,
+    "hasCpSection": false,
+    "changelogUrl": "https://raw.githubusercontent.com/chasegiunta/scss/master/CHANGELOG.md",
+    "components": {
+      "scssService": "chasegiunta\\scss\\services\\ScssService"
+    },
+    "class": "chasegiunta\\scss\\Scss"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "craftcms/rector": "dev-main"
+  }
 }

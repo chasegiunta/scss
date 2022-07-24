@@ -15,7 +15,7 @@ use chasegiunta\scss\Scss;
 use Craft;
 use craft\base\Component;
 
-use Leafo\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\Compiler;
 
 use yii\web\View;
 
@@ -64,7 +64,7 @@ class ScssService extends Component
             $outputFormat = 'Nested';
         }
 
-        $scssphp->setFormatter("Leafo\ScssPhp\Formatter\\$outputFormat");
+        $scssphp->setFormatter("ScssPhp\ScssPhp\Formatter\\$outputFormat");
 
         $rootPath = Craft::getAlias('@root');
         $scssphp->setImportPaths($rootPath);

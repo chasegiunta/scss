@@ -28,7 +28,7 @@ use craft\web\twig\tokenparsers\RegisterResourceTokenParser;
  * @package   Scss
  * @since     1.0.0
  */
-class ScssTwigExtension extends \Twig_Extension
+class ScssTwigExtension extends \Twig\Extension\AbstractExtension
 {
     // Public Methods
     // =========================================================================

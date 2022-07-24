@@ -19,15 +19,14 @@ use chasegiunta\scss\Scss;
  * @package   SCSS
  * @since     1.0.0
  */
-class ScssNode extends \Twig_Node implements \Twig_NodeCaptureInterface
+class ScssNode extends \Twig\Node\Node implements \Twig\Node\NodeCaptureInterface
 {
     // Public Methods
     // =========================================================================
-
     /**
-     * @param \Twig_Compiler $compiler
+     * @param \Twig\Compiler $compiler
      */
-    public function compile(\Twig_Compiler $compiler)
+    public function compile(\Twig\Compiler $compiler)
     {
         // Left for reference:
         // $crunched = $this->getAttribute('crunched');
