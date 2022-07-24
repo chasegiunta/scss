@@ -36,11 +36,8 @@ class ScssTokenParser extends \Twig\TokenParser\AbstractTokenParser
         $stream = $this->parser->getStream();
 
         $attributes = [
-            'compact'       => false,
             'expanded'      => false,
             'compressed'    => false,
-            'nested'        => false,
-            'crunched'      => false,
             'debug'         => false,
         ];
 
@@ -49,23 +46,8 @@ class ScssTokenParser extends \Twig\TokenParser\AbstractTokenParser
             $stream->next();
         }
 
-        if ($stream->test(\Twig\Token::NAME_TYPE, 'crunched')) {
-            $attributes['crunched'] = true;
-            $stream->next();
-        }
-
         if ($stream->test(\Twig\Token::NAME_TYPE, 'compressed')) {
             $attributes['compressed'] = true;
-            $stream->next();
-        }
-
-        if ($stream->test(\Twig\Token::NAME_TYPE, 'compact')) {
-            $attributes['compact'] = true;
-            $stream->next();
-        }
-
-        if ($stream->test(\Twig\Token::NAME_TYPE, 'nested')) {
-            $attributes['nested'] = true;
             $stream->next();
         }
 

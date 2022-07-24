@@ -16,6 +16,8 @@ use Craft;
 use craft\base\Component;
 
 use ScssPhp\ScssPhp\Compiler;
+use ScssPhp\ScssPhp\OutputStyle\Compressed;
+use ScssPhp\ScssPhp\OutputStyle\Expanded;
 
 use yii\web\View;
 
@@ -40,7 +42,7 @@ class ScssService extends Component
     public function scss($scss = "", $attributes = "")
     {
         $attributes = unserialize($attributes);
-        $scssphp = new Compiler();
+        $compiler = new Compiler();
 
         if (Craft::$app->getConfig()->general->devMode) {
             $outputFormat = Scss::$plugin->getSettings()->devModeOutputFormat;
@@ -49,33 +51,24 @@ class ScssService extends Component
         }
 
         if ($attributes['expanded']) {
-            $outputFormat = 'Expanded';
-        }
-        if ($attributes['crunched']) {
-            $outputFormat = 'Crunched';
+            $outputFormat = 'expanded';
         }
         if ($attributes['compressed']) {
-            $outputFormat = 'Compressed';
-        }
-        if ($attributes['compact']) {
-            $outputFormat = 'Compact';
-        }
-        if ($attributes['nested']) {
-            $outputFormat = 'Nested';
+            $outputFormat = 'compressed';
         }
 
-        $scssphp->setFormatter("ScssPhp\ScssPhp\Formatter\\$outputFormat");
+        $compiler->setOutputStyle($outputFormat);
 
         $rootPath = Craft::getAlias('@root');
-        $scssphp->setImportPaths($rootPath);
+        $compiler->setImportPaths($rootPath);
 
-        if ($attributes['debug'] || Scss::$plugin->getSettings()->debug) {
-            $scssphp->setLineNumberStyle(Compiler::LINE_COMMENTS);
-        }
+        // if ($attributes['debug'] || Scss::$plugin->getSettings()->debug) {
+        //     $compiler->setSourceMap(Compiler::SOURCE_MAP_INLINE);
+        // }
 
-        $compiled = $scssphp->compile($scss);
+        $compiled = $compiler->compileString($scss);
 
-        $result = $compiled;
+        $result = $compiled->getCss();
 
         Craft::$app->view->registerCss($result);
     }

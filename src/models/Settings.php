@@ -37,7 +37,7 @@ class Settings extends Model
      *
      * @var string
      */
-    public $outputFormat = 'Crunched';
+    public $outputFormat = 'compressed';
     
     /**
      * Some model attribute
@@ -45,7 +45,7 @@ class Settings extends Model
      * @var string
      */
 
-    public $devModeOutputFormat = 'Expanded';
+    public $devModeOutputFormat = 'expanded';
 
     /**
      * Some model attribute
@@ -72,9 +72,9 @@ class Settings extends Model
     {
         return [
             ['outputFormat', 'string'],
-            ['outputFormat', 'default', 'value' => 'Crunched'],
+            ['outputFormat', 'default', 'value' => 'compressed'],
             ['devModeOutputFormat', 'string'],
-            ['devModeOutputFormat', 'default', 'value' => 'Expanded'],
+            ['devModeOutputFormat', 'default', 'value' => 'expanded'],
             ['debug', 'boolean'],
             ['debug', 'default', 'value' => false],
         ];

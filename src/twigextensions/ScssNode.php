@@ -48,6 +48,6 @@ class ScssNode extends \Twig\Node\Node implements \Twig\Node\NodeCaptureInterfac
             ->write("\$attributes = '$attributes';\n");
 
         $compiler
-            ->write("echo ".Scss::className()."::\$plugin->scssService->scss(\$_compiledBody, \$attributes);\n");
+            ->write("echo ".Scss::class."::\$plugin->scssService->scss(\$_compiledBody, \$attributes);\n");
     }
 }

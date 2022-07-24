@@ -25,12 +25,9 @@
 return [
 
     /* Default output format */
-    // "outputFormat" => "Crunched",
+    // "outputFormat" => "compressed",
 
     /* Output format while in devMode */
-    // "devModeOutputFormat" => "Expanded",
-
-    /* Output original SCSS line numbers within the compiled CSS */
-    // "debug"  => false,
+    // "devModeOutputFormat" => "expanded",
 
 ];
