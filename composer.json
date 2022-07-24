@@ -23,7 +23,7 @@
     ],
     "require": {
         "craftcms/cms": "^3.0.0",
-        "leafo/scssphp": "^0.7.4"
+        "scssphp/scssphp": "^1.10"
     },
     "autoload": {
         "psr-4": {
@@ -40,5 +40,11 @@
             "scssService": "chasegiunta\\scss\\services\\ScssService"
         },
         "class": "chasegiunta\\scss\\Scss"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
