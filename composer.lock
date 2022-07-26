@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f75743dde5835386afbd968b37729770",
+    "content-hash": "63dc9592ab3140049e94a15103030274",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -3118,16 +3118,16 @@
         },
         {
             "name": "scssphp/scssphp",
-            "version": "v1.10.3",
+            "version": "v1.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scssphp/scssphp.git",
-                "reference": "0f1e1516ed2412ad43e42a6a319e77624ba1f713"
+                "reference": "8ed20753db2d3d82629e6f5d35535bbbd3893b0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/0f1e1516ed2412ad43e42a6a319e77624ba1f713",
-                "reference": "0f1e1516ed2412ad43e42a6a319e77624ba1f713",
+                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/8ed20753db2d3d82629e6f5d35535bbbd3893b0c",
+                "reference": "8ed20753db2d3d82629e6f5d35535bbbd3893b0c",
                 "shasum": ""
             },
             "require": {
@@ -3154,6 +3154,12 @@
                 "bin/pscss"
             ],
             "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "forward-command": false,
+                    "bin-links": false
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "ScssPhp\\ScssPhp\\": "src/"
@@ -3186,9 +3192,9 @@
             ],
             "support": {
                 "issues": "https://github.com/scssphp/scssphp/issues",
-                "source": "https://github.com/scssphp/scssphp/tree/v1.10.3"
+                "source": "https://github.com/scssphp/scssphp/tree/v1.10.4"
             },
-            "time": "2022-05-16T07:22:18+00:00"
+            "time": "2022-07-26T16:28:33+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -6835,5 +6841,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
