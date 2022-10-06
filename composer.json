@@ -21,7 +21,7 @@
     }
   ],
   "require": {
-    "craftcms/cms": "^4.0.0",
+    "craftcms/cms": "4.2.5",
     "scssphp/scssphp": "1.10.5",
     "php": "^8.0.2"
   },
