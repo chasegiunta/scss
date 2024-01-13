@@ -22,7 +22,7 @@
   ],
   "require": {
     "craftcms/cms": "^4.0.0",
-    "scssphp/scssphp": "1.11.0",
+    "scssphp/scssphp": "1.12.1",
     "php": "^8.0.2"
   },
   "autoload": {
